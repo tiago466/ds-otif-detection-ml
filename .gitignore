@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+.env/
+
+# OS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Models
+models/*.pkl
+api/model.pkl
+
+# Data
+database/raw/*
+database/interim/*
+database/processed/*
+
+# VSCode
+.vscode/
+
+# Logs
+logs/
+*.log

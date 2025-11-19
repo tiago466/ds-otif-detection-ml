@@ -1,0 +1,259 @@
+# 🚚 Previsão de Atrasos na Cadeia Logística da Zenatur (Case SOLID)
+
+### Faculdade Impacta — Fundamentos de Machine Learning  
+**Professor:** Vinícius Vale  
+**Aluno:** *Tiago Pereira Lima* | **RA:** *1020325*  
+**Semestre:** 2025/2
+
+---
+
+## 🧠 Visão Geral
+
+Este projeto aplica Machine Learning para prever atrasos de entrega (On Time) dentro do indicador estratégico OTIF (On Time In Full) da empresa Zenatur Logística.
+A solução foi construída como entrega oficial do Trabalho de Fundamentos de ML e MVP real corporativo para stakeholders da Zenatur (via SOLID Consultoria)
+
+A solução abrange:
+
+- Pipeline CRISP-DM completo  
+- EDA descritiva + inferencial  
+- Pré-processamento profissional com sklearn  
+- Tratamento de desbalanceamento extremo  
+- Treinamento de modelos clássicos e avançados  
+- Otimização de threshold por custo de erro  
+- Interpretação com SHAP  
+- Deploy em **API FastAPI** e **aplicativo Streamlit/Gradio**  
+- Estrutura modular e reprodutível para GitHub  
+
+---
+
+## 🎯 Objetivo
+
+Desenvolver um sistema robusto de detecção de fraude baseado em dados, capaz de:
+
+- Prever se um pedido será entregue no prazo ou fora do prazo  
+- Estimar o risco de atraso com base nas etapas operacionais  
+- Sugerir ações operacionais preventivas  
+- Disponibilizar uma interface simples (API + Dashboard)
+
+---
+
+## 📦 Dataset
+
+**Fonte:** Informações de pedidos e acompanhamento operacional banco de dados SQL Server
+
+- **284.807** registros  
+- **492** casos fora do prazo  
+
+---
+
+# 🧭 Navegação do Projeto
+
+> Toda a documentação detalhada está em `/docs/pages/*.md`.
+
+---
+
+## 📘 Entedimento do Negócio e dos Dados
+
+<details>
+<summary>📊 Clique para Expandir</summary>
+
+- [Entendimento do Negócio](docs/pages/entendimento_negocio.md)
+- [Entendimento dos Dados](docs/pages/entendimento_dados.md)
+
+</details>
+
+---
+
+## 🔎 Exploração dos Dados (EDA)
+
+<details>
+<summary>📊 Clique para Expandir</summary>
+
+- [EDA Estatística Descritiva](docs/pages/eda_descritiva.md)
+- [EDA Estatística Inferencial](docs/pages/eda_inferencial.md)
+
+</details>
+
+---
+
+## ⚙️ Pré-processamento
+
+<details>
+<summary>⚙️ Clique para Expandir</summary>
+
+- [Imputação e Limpeza](docs/pages/preprocessamento.md#imputacao)
+- [Encoding e Escalonamento](docs/pages/preprocessamento.md#encoding)
+- [Pipeline com ColumnTransformer](docs/pages/preprocessamento.md#pipeline)
+
+</details>
+
+---
+
+## 🛠 Feature Engineering
+
+<details>
+<summary>🛠 Clique para Expandir</summary>
+
+- [Criação de variáveis derivadas](docs/pages/feature_engineering.md)
+- [Tratamento de valores raros](docs/pages/feature_engineering.md#rare)
+- [Novas features para modelos ML](docs/pages/feature_engineering.md#novas)
+
+</details>
+
+---
+
+## 🤖 Modelagem
+
+<details>
+<summary>🤖 Clique para Expandir</summary>
+
+### Modelos Clássicos  
+- [Regressão Logística](docs/pages/modelagem_classica.md#logistic)  
+- [Random Forest](docs/pages/modelagem_classica.md#rf)  
+- [Gradient Boosting](docs/pages/modelagem_classica.md#gb)  
+
+### Modelos Avançados  
+- [XGBoost](docs/pages/modelagem_avancada.md#xgb)  
+- [LightGBM](docs/pages/modelagem_avancada.md#lgbm)  
+- [Autoencoders](docs/pages/modelagem_avancada.md#autoencoders)  
+- [Isolation Forest](docs/pages/modelagem_avancada.md#isolation)  
+
+### Threshold Tuning  
+- [Otimização baseada em Recall](docs/pages/threshold_tuning.md)
+
+</details>
+
+---
+
+## 📏 Avaliação
+
+<details>
+<summary>📏 Clique para Expandir</summary>
+
+- [Métricas: AUC, F1, Recall, Precision](docs/pages/avaliacao.md)
+- [Matriz de confusão](docs/pages/avaliacao.md#cm)
+- [Precision-Recall Curve](docs/pages/avaliacao.md#pr)
+- [SHAP e explicabilidade](docs/pages/interpretabilidade.md)
+
+</details>
+
+---
+
+## 🚀 Deploy
+
+<details>
+<summary>🚀 Clique para Expandir</summary>
+
+- [API (FastAPI)](docs/pages/deploy_api.md)
+- [App (Streamlit/Gradio)](docs/pages/deploy_app.md)
+
+</details>
+
+---
+
+## 📓 Notebooks Principais
+
+- [01 — EDA Descritiva](notebooks/01_eda_descritiva.ipynb)  
+- [02 — EDA Inferencial](notebooks/02_eda_inferencial.ipynb)  
+- [03 — Pré-processamento](notebooks/03_preprocessing_pipeline.ipynb)  
+- [04 — Modelos Clássicos](notebooks/04_modelos_classicos.ipynb)  
+- [05 — Modelos Avançados](notebooks/05_modelos_avancados.ipynb)  
+- [06 — Threshold e Avaliação](notebooks/06_threshold_avaliacao.ipynb)  
+
+---
+
+## 📚 Estrutura do Projeto
+
+```bash
+ds-otif-detection-ml/
+│
+├── api/                  # API FastAPI
+├── app/                  # Streamlit/Gradio
+├── database/             # raw/interim/processed
+├── deploy/               # Docker e Heroku
+├── docs/                 # Documentação detalhada
+├── models/               # Modelos treinados
+├── notebooks/            # Notebooks principais
+├── src/                  # Código modular
+└── requirements.txt
+````
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+* Python 3.11
+* Scikit-Learn
+* Pandas / NumPy
+* XGBoost / LightGBM
+* SHAP
+* FastAPI
+* Streamlit / Gradio
+* Docker
+* Git / GitHub
+
+---
+
+## 🛠 requirements.txt
+```txt
+sqlalchemy 
+pyodbc
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+xgboost
+jupyter
+```
+
+## ▶️ Como Rodar o Projeto
+
+### 1. Criar ambiente
+
+```bash
+python -m venv venv
+source venv/bin/activate   # Linux
+venv\Scripts\activate      # Windows
+pip install -r requirements.txt
+```
+
+### 2. Rodar API
+
+```bash
+uvicorn api.main:app --reload
+```
+
+### 3. Rodar App
+
+```bash
+streamlit run app/streamlit_app.py
+```
+
+---
+
+## 🗺 Roadmap do Projeto
+
+* ✔ Setup inicial
+* ✔ Estrutura de documentação
+* 🔄 EDA completa
+* 🔄 Pré-processamento
+* 🔄 Modelagem
+* 🔄 Avaliação
+* 🔄 Deploy
+* 🔄 Relatório final / apresentação
+
+---
+
+## 📬 Contato
+
+**LinkedIn:** [Tiago Lima](https://www.linkedin.com/in/tiago-lima-935049154/)  
+**GitHub:** [Tiago 466](https://github.com/tiago466)
+
+---
+
+<div align="left">
+  <a href="#topo" title="Voltar ao início do README">⬆️ Topo</a>
+</div>
+
+---
