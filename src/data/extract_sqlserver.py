@@ -35,8 +35,9 @@ def extract_operacional(output_path="../database/raw/acompanhamento_operacional.
     """
 
     query = """
-        SELECT *
-        FROM DB_PWBI.dbo.DB_ZT_GERAL_ACOMPANHAMENTO_OPERACIONAL;
+        SELECT grpd.*, grao.*
+          FROM DB_PWBI.dbo.DB_ZT_GERAL_PEDIDOS as grpd WITH(NOLOCK)
+          INNER JOIN DB_PWBI.dbo.DB_ZT_GERAL_ACOMPANHAMENTO_OPERACIONAL as grao WITH(NOLOCK) ON grao.ss = grpd.ss;
     """
 
     print("Conectando ao SQL Server...")

@@ -153,6 +153,7 @@ Desenvolver um sistema robusto de detecção de fraude baseado em dados, capaz d
 
 ## 📓 Notebooks Principais
 
+- [00 — EDA Tratamento](notebooks/00_eda_tratamento.ipynb)  
 - [01 — EDA Descritiva](notebooks/01_eda_descritiva.ipynb)  
 - [02 — EDA Inferencial](notebooks/02_eda_inferencial.ipynb)  
 - [03 — Pré-processamento](notebooks/03_preprocessing_pipeline.ipynb)  
