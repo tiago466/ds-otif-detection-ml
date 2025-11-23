@@ -237,7 +237,7 @@ streamlit run app/streamlit_app.py
 
 * ✔ Setup inicial
 * ✔ Estrutura de documentação
-* 🔄 EDA completa
+* ✔ EDA completa
 * 🔄 Pré-processamento
 * 🔄 Modelagem
 * 🔄 Avaliação

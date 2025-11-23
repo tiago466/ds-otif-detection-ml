@@ -5,8 +5,8 @@ __pycache__/
 *.pyd
 
 # Virtual env
-venv/
-.env/
+venv
+.env
 
 # OS
 .DS_Store
