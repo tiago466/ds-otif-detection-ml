@@ -76,27 +76,23 @@ Desenvolver um sistema robusto de detecção de fraude baseado em dados, capaz d
 
 ---
 
-## ⚙️ Pré-processamento
-
-<details>
-<summary>⚙️ Clique para Expandir</summary>
-
-- [Imputação e Limpeza](docs/pages/preprocessamento.md#imputacao)
-- [Encoding e Escalonamento](docs/pages/preprocessamento.md#encoding)
-- [Pipeline com ColumnTransformer](docs/pages/preprocessamento.md#pipeline)
-
-</details>
-
----
-
 ## 🛠 Feature Engineering
 
 <details>
 <summary>🛠 Clique para Expandir</summary>
 
 - [Criação de variáveis derivadas](docs/pages/feature_engineering.md)
-- [Tratamento de valores raros](docs/pages/feature_engineering.md#rare)
-- [Novas features para modelos ML](docs/pages/feature_engineering.md#novas)
+
+</details>
+
+---
+
+## ⚙️ Pré-processamento
+
+<details>
+<summary>⚙️ Clique para Expandir</summary>
+
+- [Imputação e Limpeza](docs/pages/preprocessamento.md#imputacao)
 
 </details>
 
@@ -107,19 +103,11 @@ Desenvolver um sistema robusto de detecção de fraude baseado em dados, capaz d
 <details>
 <summary>🤖 Clique para Expandir</summary>
 
-### Modelos Clássicos  
-- [Regressão Logística](docs/pages/modelagem_classica.md#logistic)  
-- [Random Forest](docs/pages/modelagem_classica.md#rf)  
-- [Gradient Boosting](docs/pages/modelagem_classica.md#gb)  
-
-### Modelos Avançados  
-- [XGBoost](docs/pages/modelagem_avancada.md#xgb)  
-- [LightGBM](docs/pages/modelagem_avancada.md#lgbm)  
-- [Autoencoders](docs/pages/modelagem_avancada.md#autoencoders)  
-- [Isolation Forest](docs/pages/modelagem_avancada.md#isolation)  
-
-### Threshold Tuning  
-- [Otimização baseada em Recall](docs/pages/threshold_tuning.md)
+### Modelos, Threshold e Tuning
+- [Regressão Logística](docs/pages/modelagem.md#logistic)  
+- [Random Forest](docs/pages/modelagem.md#rf)  
+- [Gradient Boosting](docs/pages/modelagem.md#gb)  
+- [Threshold e Tuning](docs/pages/modelagem.md#gb) 
 
 </details>
 
@@ -130,10 +118,9 @@ Desenvolver um sistema robusto de detecção de fraude baseado em dados, capaz d
 <details>
 <summary>📏 Clique para Expandir</summary>
 
-- [Métricas: AUC, F1, Recall, Precision](docs/pages/avaliacao.md)
-- [Matriz de confusão](docs/pages/avaliacao.md#cm)
-- [Precision-Recall Curve](docs/pages/avaliacao.md#pr)
-- [SHAP e explicabilidade](docs/pages/interpretabilidade.md)
+- [Métricas: AUC, F1, Recall, Precision](docs/pages/04_modelagem.ipynb)
+- [Matriz de confusão](docs/pages/04_modelagem.ipynb#cm)
+- [Precision-Recall Curve](docs/pages/04_modelagem.ipynb#pr)
 
 </details>
 
@@ -157,9 +144,7 @@ Desenvolver um sistema robusto de detecção de fraude baseado em dados, capaz d
 - [01 — EDA Descritiva](notebooks/01_eda_descritiva.ipynb)  
 - [02 — EDA Inferencial](notebooks/02_eda_inferencial.ipynb)  
 - [03 — Pré-processamento](notebooks/03_preprocessing_pipeline.ipynb)  
-- [04 — Modelos Clássicos](notebooks/04_modelos_classicos.ipynb)  
-- [05 — Modelos Avançados](notebooks/05_modelos_avancados.ipynb)  
-- [06 — Threshold e Avaliação](notebooks/06_threshold_avaliacao.ipynb)  
+- [04 — Modelagem](notebooks/04_modelagem.ipynb)  
 
 ---
 
