@@ -41,8 +41,8 @@ Desenvolver um sistema robusto de detecção de fraude baseado em dados, capaz d
 
 **Fonte:** Informações de pedidos e acompanhamento operacional banco de dados SQL Server
 
-- **284.807** registros  
-- **492** casos fora do prazo  
+- **487.391** registros  
+- **130.499** casos fora do prazo  
 
 ---
 
@@ -126,6 +126,12 @@ Desenvolver um sistema robusto de detecção de fraude baseado em dados, capaz d
 
 ---
 
+## 📓 Conclusão
+
+- [Conclusão](docs/pages/conclusao.md)  
+
+---
+
 ## 🚀 Deploy
 
 <details>
@@ -168,13 +174,13 @@ ds-otif-detection-ml/
 
 ## 🛠 Tecnologias Utilizadas
 
-* Python 3.11
+* Python 3.12
 * Scikit-Learn
 * Pandas / NumPy
-* XGBoost / LightGBM
 * SHAP
 * FastAPI
 * Streamlit / Gradio
+* imblearn
 * Docker
 * Git / GitHub
 
@@ -191,6 +197,9 @@ matplotlib
 seaborn
 xgboost
 jupyter
+scipy
+imbalanced-learn
+imblearn
 ```
 
 ## ▶️ Como Rodar o Projeto
@@ -223,9 +232,9 @@ streamlit run app/streamlit_app.py
 * ✔ Setup inicial
 * ✔ Estrutura de documentação
 * ✔ EDA completa
-* 🔄 Pré-processamento
-* 🔄 Modelagem
-* 🔄 Avaliação
+* ✔ Pré-processamento
+* ✔ Modelagem
+* ✔ Avaliação
 * 🔄 Deploy
 * 🔄 Relatório final / apresentação
 
